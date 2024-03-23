@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contate-nos</title>
+</head>
+<body>
+    
+    <form id="nameForm" name="nameForm" action="#">
+        <label for="name">Insira seu nome completo: </label>
+        <input type="name" id="name" name="name" onblur="nameValidation()" onfocus="nameEdition()" required maxlength="50" />
+        <span id="error-name"></span>
+    </form>
+
+    <form id="mailForm" name="mailForm" action="#">
+        <label for="mail">Insira um e-mail válido:</label>
+        <input type="mail" id="mail" name="mail" onblur="mailValidation()" onfocus="mailEdition()" required maxlength="50" />
+        <span id="error-mail"></span>
+    </form>
+
+    <form id="msgForm" name="msgForm" action="#">
+        <label for="msg">Insira sua mensagem:</label>
+        <input type="msg" id="msg" name="msg" onblur="msgValidation()" onfocus="msgEdition()" required maxlength="500" />
+        <span id="error-msg"></span>
+    </form>
+
+    <button id="button">SUBMIT</button>
+
+</body>
+</html>
